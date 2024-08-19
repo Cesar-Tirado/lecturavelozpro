@@ -482,9 +482,7 @@ exercise6Btn.addEventListener('click', function () {
                 document.querySelector('#exercise2 .speed-buttons').style.display = 'none';
             });
 
-            document.getElementById('slowWords').addEventListener('click', function () {
-                updateWordSpeed(2000); // Lento
-            });
+           
 
             document.getElementById('mediumWords').addEventListener('click', function () {
                 updateWordSpeed(1000); // Medio
@@ -548,9 +546,7 @@ exercise6Btn.addEventListener('click', function () {
                 document.querySelector('#exercise3 .speed-buttons').style.display = 'none';
             });
 
-            document.getElementById('slowPhrases').addEventListener('click', function () {
-                updatePhraseSpeed(5000); // Lento
-            });
+           
 
             document.getElementById('mediumPhrases').addEventListener('click', function () {
                 updatePhraseSpeed(3000); // Medio

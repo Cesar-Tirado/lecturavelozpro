@@ -2,6 +2,15 @@
 <html lang="es">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V23PJ1W867"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V23PJ1W867');
+    </script>
     <link rel="icon" href="icon.ico" type="image/x-icon">
 
     <meta charset="utf-8">
@@ -76,10 +85,7 @@
                         
                             <!-- Panel de Ejercicios -->
                             <div id="exercisePanel">
-                                   <!-- Mensaje de versión de prueba -->
-                                <div class="trial-message">
-                                    * <strong>Versión de Prueba.</strong> Adquiere acceso completo e ilimitado al software más abajo. *
-                                </div>
+                                 
                                 <!-- Ejercicio 1: Salto de Ojo -->
                                 <div class="exercise" id="exercise1" style="display: none;">
                                     <div class="exercise-title-container">
@@ -100,10 +106,9 @@
                                     <button id="startWords" class="btn btn-success">Iniciar Lectura</button>
                                     <button id="stopWords" class="btn btn-danger" style="display: none;">Detener Lectura</button>
                                     <div class="speed-buttons mt-3">
-                                        <button id="slowWords" class="btn btn-speed">20 PLM</button>
-                                        <button id="mediumWords" class="btn btn-speed">40 PLM</button>
-                                        <button id="fastWords" class="btn btn-speed">60 PLM</button>
-                                        <button id="proWords" class="btn btn-speed">120 PLM</button>
+                                        <button id="mediumWords" class="btn btn-speed">NVL 1</button>
+                                        <button id="fastWords" class="btn btn-speed">NVL 2</button>
+                                        <button id="proWords" class="btn btn-speed">NVL 3</button>
                                     </div>
                                     <p id="displayWord" class="mt-3"></p>
                                 </div>
@@ -117,10 +122,9 @@
                                     <button id="startPhrases" class="btn btn-success">Iniciar Lectura</button>
                                     <button id="stopPhrases" class="btn btn-danger" style="display: none;">Detener Lectura</button>
                                     <div class="speed-buttons mt-3">
-                                        <button id="slowPhrases" class="btn btn-speed">NVL 1</button>
-                                        <button id="mediumPhrases" class="btn btn-speed">NVL 2</button>
-                                        <button id="fastPhrases" class="btn btn-speed">NVL 3</button>
-                                        <button id="proPhrases" class="btn btn-speed">NVL 4</button>
+                                        <button id="mediumPhrases" class="btn btn-speed">NVL 1</button>
+                                        <button id="fastPhrases" class="btn btn-speed">NVL 2</button>
+                                        <button id="proPhrases" class="btn btn-speed">NVL 3</button>
                                     </div>
                                     <p id="displayPhrase" class="mt-3"></p>
                                 </div>
