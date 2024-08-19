@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Software de Lectura Veloz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main-layout">
+    <!-- Barra superior con oferta -->
+    <div class="top-bar">
+        <span class="offer-text">¡Oferta en Software de Lectura Veloz completo!</span>
+        <span class="countdown">00:28:00</span>
+        <a href="#ofertaEspecial" class="cta-button">Ver Oferta</a>
+    </div>    
+
+    <!-- Wrapper -->
+    <div class="wrapper " style="padding-top: 60px;">
+        <div id="content">
+            <!-- Sección Principal -->
+            <section class="fondoPrincipal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ourheading">
+                                <h1 class="section-title">Software de Lectura Veloz</h1>
+                                <p class="section-description">
+                                    Descubre cómo puedes mejorar tu velocidad y comprensión lectora con nuestros EJERCICIOS GRATIS. Estos ejercicios son una muestra de nuestro <strong>Software de Lectura Veloz</strong>, diseñado para ayudarte a leer más rápido y comprender mejor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div class="row exercise-selection" >
+                                             
+                        <div class="col-md-3">
+                            <div class="instruction-message">
+                                Elige una opción:
+                            </div>
+                            <!-- Menú de Selección de Ejercicios -->
+                            <div >
+                              
+                                <button id="exercise1Btn" class="btn btn-exercise btn-block">
+                                    <i class="fa fa-eye"></i>1: Salto de Ojo
+                                </button>
+                                <button id="exercise2Btn" class="btn btn-exercise btn-block">
+                                    <i class="fa fa-book"></i>2: Lectura de Palabras
+                                </button>
+                                <button id="exercise3Btn" class="btn btn-exercise btn-block">
+                                    <i class="fa fa-paragraph"></i>3: Lectura de Frases
+                                </button>
+                                
+                                <button id="exercise5Btn" class="btn btn-exercise btn-block">
+                                    <i class="fa fa-times-circle"></i>4: Elimina Distractores
+                                </button>
+                                <button id="exercise6Btn" class="btn btn-exercise btn-block">
+                                    <i class="fa fa-columns"></i>5: Lectura Vertical
+                                </button>
+                                 <!-- Nuevo botón con enlace a otra web -->
+                                <a href="https://pay.hotmart.com/X94099421B" class="btn btn-web btn-block" target="_blank">
+                                    <i class="fa fa-external-link"></i> &ensp;Obtener Versión Completa
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-9">
+                        
+                            <!-- Panel de Ejercicios -->
+                            <div id="exercisePanel">
+                                   <!-- Mensaje de versión de prueba -->
+                                <div class="trial-message">
+                                    * <strong>Versión de Prueba.</strong> Adquiere acceso completo e ilimitado al software más abajo. *
+                                </div>
+                                <!-- Ejercicio 1: Salto de Ojo -->
+                                <div class="exercise" id="exercise1" style="display: none;">
+                                    <div class="exercise-title-container">
+                                        <h3>Sigue al punto rojo sin mover la cabeza</h3>
+                                    </div>
+                                    <br>
+                                    <button id="startJump" class="btn btn-success">Iniciar Ejercicio</button>
+                                    <button id="stopJump" class="btn btn-danger" style="display: none;">Detener Ejercicio</button>
+                                    <div id="jumpDot" style="display:none;"></div>
+                                </div>
+
+                                <!-- Ejercicio 2: Lectura de Palabras -->
+                                <div class="exercise" id="exercise2" style="display: none;">
+                                    <div class="exercise-title-container">
+                                        <h3>Lee y comprende las palabras, aumenta la velocidad si lo crees necesario</h3>
+                                    </div>
+                                    <br>
+                                    <button id="startWords" class="btn btn-success">Iniciar Lectura</button>
+                                    <button id="stopWords" class="btn btn-danger" style="display: none;">Detener Lectura</button>
+                                    <div class="speed-buttons mt-3">
+                                        <button id="slowWords" class="btn btn-speed">20 PLM</button>
+                                        <button id="mediumWords" class="btn btn-speed">40 PLM</button>
+                                        <button id="fastWords" class="btn btn-speed">60 PLM</button>
+                                        <button id="proWords" class="btn btn-speed">120 PLM</button>
+                                    </div>
+                                    <p id="displayWord" class="mt-3"></p>
+                                </div>
+
+                                <!-- Ejercicio 3: Lectura de Frases -->
+                                <div class="exercise" id="exercise3" style="display: none;">
+                                    <div class="exercise-title-container">
+                                        <h3>Lee y comprende las frases, aumenta la velocidad si lo crees necesario</h3>
+                                    </div>
+                                    <br>
+                                    <button id="startPhrases" class="btn btn-success">Iniciar Lectura</button>
+                                    <button id="stopPhrases" class="btn btn-danger" style="display: none;">Detener Lectura</button>
+                                    <div class="speed-buttons mt-3">
+                                        <button id="slowPhrases" class="btn btn-speed">NVL 1</button>
+                                        <button id="mediumPhrases" class="btn btn-speed">NVL 2</button>
+                                        <button id="fastPhrases" class="btn btn-speed">NVL 3</button>
+                                        <button id="proPhrases" class="btn btn-speed">NVL 4</button>
+                                    </div>
+                                    <p id="displayPhrase" class="mt-3"></p>
+                                </div>
+
+                                <!-- Ejercicio 4: Periféricos -->
+                                <div class="exercise" id="exercise4" style="display: none;">
+                                    <h3>Ejercicio 4: Mejora tu visión periférica</h3>
+                                    <p id="peripheralText">Texto base...</p>
+                                    <div id="peripheralOptions"></div>
+                                </div>
+
+                                <!-- Ejercicio 5: Eliminación de Distractores -->
+                                <div class="exercise" id="exercise5" style="display: none;">
+                                    <div class="exercise-title-container">
+                                        <h3>Intenta comprender el texto con distractores, verifica tu respuesta</h3>
+                                    </div>
+                                    <div id="distractorTimer" style="margin-top: 10px; font-size: 1.5rem; color: red;"></div>
+                                    <div id="distractorText" style="text-align: center;"></div>
+                                </div>
+
+                              <!-- Ejercicio 6: Lectura Vertical -->
+                                <div class="exercise" id="exercise6" style="display: none;">
+                                    <div class="exercise-title-container">
+                                        <h3>Intenta leer y comprender el texto vertical, si lo logras presiona el botón</h3>
+                                    </div>
+                                    <div id="verticalText"></div>
+                                    <button id="achievedBtn" class="btn btn-primary" style="margin-top: 20px; display:none;">Logrado</button>
+                                    <p id="attemptMessage">Vuelve a intentarlo</p>
+                                </div>
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Beneficios y Garantías -->
+            <section class="info_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title2">¿Por qué elegir nuestro Software de Lectura Veloz?</h2>
+                            <div class="benefits-list">
+                                <div class="benefit-item">
+                                    <i class="fa fa-check-circle"></i>
+                                    <p><strong>Garantía de devolución:</strong> Si no estás satisfecho, te devolvemos tu dinero.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fa fa-certificate"></i>
+                                    <p><strong>Certificado personalizado GRATUITO:</strong> Al culminar con todas las unidades teórico-prácticas.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fa fa-book"></i>
+                                    <p><strong>Más de 50 módulos completos:</strong> Curso de Lectura Veloz con evaluaciones para medir tu rendimiento.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fa fa-book"></i>
+                                    <p><strong>Evaluaciones por unidad:</strong> Mide tu progreso con evaluaciones en cada unidad.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fa fa-line-chart"></i>
+                                    <p><strong>Mejoría notable:</strong> Incrementa tu velocidad y comprensión de textos al completar todas las unidades.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fa fa-clock-o"></i>
+                                    <p><strong>Instalación rápida:</strong> Menos de 3 minutos, con guía en PDF y video.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                     <br>
+                </div>
+            </section>
+
+            <!-- Sección de Precio -->
+            <section class="pricing_section" id="ofertaEspecial">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <div class="pricing-box">
+                                <h2 class="section-title">¡Oferta Especial!</h2>
+                                <p class="original-price"><span>$150 dólares</span></p>
+                                <br>
+                                <p class="discounted-price">$15</p>
+                                <br>
+                                <p class="pricing-details">Pago único para acceso de por vida</p>
+                                <ul class="pricing-benefits">
+                                    <li>Guía y video de&ensp;<strong>INSTALACIÓN.&ensp;</strong></li>
+                                    <li>Certificado&ensp;<strong>GRATIS</strong>.</li>
+                                    <li>Acceso a&ensp;<strong> TODAS&ensp;</strong> las unidades.</li>
+                                    <li>Garantía de <strong>&ensp;DEVOLUCIÓN</strong>.</li>
+                                </ul>
+                                <a href="https://pay.hotmart.com/X94099421B" class="cta-buttonNuevo">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Tipos de Ejercicios -->
+            <section class="exercises_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title2">¿Qué Tipo de Ejercicios Encontraré?</h2>
+                            <div class="exercises-list">
+                                <div class="exercise-item">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <p><strong>Postura:</strong> Ejercicios para optimizar la posición de tus ojos y cuerpo, esenciales para convertirte en un lector veloz.</p>
+                                </div>
+                                <div class="exercise-item">
+                                    <i class="fa fa-eye"></i>
+                                    <p><strong>Salto de Ojo:</strong> Teoría y práctica sobre el salto de ojo, mejorando tu velocidad de lectura sin perder comprensión.</p>
+                                </div>
+                                                         
+                                <div class="exercise-item">
+                                    <i class="fa fa-calculator"></i>
+                                    <p><strong>Cálculo de PLM - PCM:</strong> Test para medir comprensión y velocidad, ajustando la dificultad de forma progresiva.</p>
+                                </div>
+                                <div class="exercise-item">
+                                    <i class="fa fa-book"></i>
+                                    <p><strong>Glosario de Términos:</strong> Accede a un completo glosario con definiciones clave para mejorar tu comprensión y aprendizaje durante el curso.</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <!-- Sección de Video -->
+            <section class="video_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title">Nuestro Software de Lectura Veloz por Dentro</h2>
+                            <p class="video-description">
+                                En este video te mostraremos el software de Lectura Veloz por dentro, incluyendo detalles sobre las evaluaciones, secciones teóricas, y mucho más.
+                            </p>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wDHEmUlE2As?si=CtW4w71ztJcNKDr4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <!-- Contenedor centrado -->
+                            <div class="button-container">
+                                <a href="https://pay.hotmart.com/X94099421B" class="cta-buttonNuevo">¡Lo Quiero Ahora!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Sección de Testimonios -->
+            <section class="testimonials_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="section-title2">Testimonios de Nuestros Usuarios</h2>
+                            <div class="testimonials-list">
+                                <!-- Testimonio 1 -->
+                                <div class="testimonial-item">
+                                    <img src="images/user1.png" alt="María G." class="testimonial-img">
+                                    <p>"Este software cambió por completo mi forma de leer. Ahora puedo terminar libros en la mitad del tiempo."</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i> 4.5/5
+                                    </div>
+                                    <p><strong>- Rodrigo Sánchez P.</strong></p>
+                                </div>
+                                <!-- Testimonio 2 -->
+                                <div class="testimonial-item">
+                                    <img src="images/user2.png" alt="Juan P." class="testimonial-img">
+                                    <p>"Increíble, mejoré tanto mi velocidad de lectura como mi comprensión. Totalmente recomendable."</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> 5/5
+                                    </div>
+                                    <p><strong>- Luisa Pastor M.</strong></p>
+                                </div>
+                                <!-- Testimonio 3 -->
+                                <div class="testimonial-item">
+                                    <img src="images/user3.png" alt="Luisa R." class="testimonial-img">
+                                    <p>"El curso de lectura veloz me ha ayudado mucho en mi trabajo. Leer y comprender documentos largos ya no es un problema."</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i> 4.5/5
+                                    </div>
+                                    <p><strong>- Marco Jauregui.</strong></p>
+                                </div>
+                                <!-- Testimonio 4 -->
+                                <div class="testimonial-item">
+                                    <img src="images/user4.png" alt="Carlos M." class="testimonial-img">
+                                    <p>"Es impresionante lo que se puede lograr con este software. Superó mis expectativas en todos los aspectos."</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> 5/5
+                                    </div>
+                                    <p><strong>- Daniela Muñoz.</strong></p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                    
+             <!-- Banner de Llamada a la Acción -->
+             <section class="cta_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="cta-banner">
+                                <h2 class="section-title">¿Listo para mejorar tu velocidad de lectura?</h2>
+                                <p>Empieza hoy mismo con nuestro Software de Lectura Veloz con ejercicios teóricos y prácticos especializados y observa cómo tu capacidad de lectura aumenta significativamente.</p>
+                                <a href="https://pay.hotmart.com/X94099421B" class="cta-button">Comenzar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+
+
+
+            <!-- Sección de Copyright -->
+            <div class="copyright-section">
+                <p>© 2024 Lectura Veloz Software. Todos los derechos reservados.</p>
+            </div>
+
+
+    
+        </div>
+    </div>
+
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+</body>
+</html>
