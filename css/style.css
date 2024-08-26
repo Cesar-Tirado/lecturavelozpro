@@ -1535,3 +1535,206 @@ body {
     color: #ffff; /* Color del texto */
     margin-bottom: 5px; /* Espacio inferior */
 }
+
+.skills_section .section-title2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+.skill-item i {
+    color: #14aff8;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.skill-item p {
+    margin: 0;
+    color: #6a7785;
+}
+
+.skills-image {
+    margin-top: 20px;
+}
+
+.skills-list {
+    color: white !important;
+    font-size: 1.6rem; /* Tamaño de fuente más grande */
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-item i {
+    color: #14aff8;
+    margin-right: 10px;
+}
+
+.skill-item p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill-image {
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    width: auto; /* Se ajusta para que sea del mismo tamaño que el texto */
+}
+
+.cta-button-container {
+    margin-top: 20px;
+    text-align: center; /* Centra el botón */
+}
+
+.cta-buttonNuevo {
+    display: inline-block;
+    margin-top: 20px; /* Margen superior */
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-buttonNuevo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.questions_section {
+    margin-top: 30px;
+}
+
+.questions-summary {
+    text-align: center;
+    color: white; /* Asegura que el texto sea blanco */
+    font-size: 1.4rem; /* Tamaño del texto */
+    margin-bottom: 30px;
+}
+
+.questions-summary p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.questions-summary i {
+    color: #ff6b6b; /* Color del ícono */
+    margin-right: 10px;
+}
+
+.image-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.skill-image {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.questions_section {
+    margin-top: 30px;
+}
+
+.questions-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.question-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero */
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%; /* Ajusta este valor según el diseño deseado */
+    max-width: 600px; /* Limita el ancho máximo del contenedor */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.question-item2 {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero */
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 100%; /* Ajusta este valor según el diseño deseado */
+    max-width: 700px; /* Limita el ancho máximo del contenedor */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+.question-item i {
+    color: #ff6b6b; /* Color del ícono */
+    margin-right: 10px;
+}
+
+.questions_section .question-item p {
+    font-size: 1.1rem; /* Ajusta este valor según el tamaño deseado */
+    line-height: 1.6; /* Mejora la legibilidad aumentando el espacio entre líneas */
+    color: white; /* Asegúrate de que el color del texto sea blanco */
+}
+
+.question-item i {
+    color: #ff6b6b; /* Color del ícono */
+    margin-right: 10px;
+    font-size: 1.2rem; /* Aumenta el tamaño del ícono si es necesario */
+}
+.banner_section {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner-content {
+    padding-left: 20px;
+}
+
+.banner-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-list {
+    list-style: none;
+    padding: 0;
+}
+
+.banner-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-list i {
+    color: #14aff8;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
